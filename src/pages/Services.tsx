@@ -66,7 +66,7 @@ const Services = () => {
                         {service.description}
                       </p>
                       <div className="space-y-2">
-                        <h4 className="font-montserrat font-medium text-bmg-navy">Key Features:</h4>
+                        <h4 className="font-montserrat text-bmg-navy font-semibold">Key Features:</h4>
                         <ul className="grid grid-cols-2 gap-2">
                           {service.features.map((feature, idx) => <li key={idx} className="font-open-sans text-sm text-gray-600 flex items-center">
                               <span className="w-2 h-2 bg-bmg-orange rounded-full mr-2"></span>
