@@ -43,8 +43,8 @@ const Footer = () => {
           <div>
             <h3 className="font-montserrat font-semibold text-lg mb-4">Contact Info</h3>
             <div className="space-y-2 font-open-sans text-gray-300">
-              <p>Tanzania Headquarters
-Morocco Square Mwaikibaki-Road</p>
+              <p>Tanzania Headquarters 
+Morocco Square, Mwaikibaki-Road</p>
               <p>info@bmggroup.co.tz</p>
               <p>+255 740 076 076</p>
             </div>
