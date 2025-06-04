@@ -1,10 +1,7 @@
-
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-
 const Hero = () => {
-  return (
-    <section className="relative bg-gradient-to-br from-bmg-navy via-bmg-navy to-slate-800 text-white overflow-hidden">
+  return <section className="relative bg-gradient-to-br from-bmg-navy via-bmg-navy to-slate-800 text-white overflow-hidden">
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -18,25 +15,14 @@ const Hero = () => {
               Business Consultancy & Investment Management Across Africa
             </p>
             
-            <p className="font-open-sans text-lg text-gray-300 max-w-lg">
-              Empowering businesses with strategic oversight across multiple sectors including tourism, logistics, real estate, mobile finance, and construction.
-            </p>
+            <p className="font-open-sans text-lg text-gray-300 max-w-lg">Empowering businesses with strategic oversight across multiple sectors including tourism & hospitality , freight & logistics, real estate, financial services, lease of heavy machinery and construction.</p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                asChild
-                size="lg"
-                className="bg-bmg-crimson hover:bg-bmg-orange text-white font-montserrat font-semibold px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
-              >
+              <Button asChild size="lg" className="bg-bmg-crimson hover:bg-bmg-orange text-white font-montserrat font-semibold px-8 py-3 text-lg transition-all duration-300 hover:scale-105">
                 <Link to="/services">Explore Services</Link>
               </Button>
               
-              <Button 
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-2 border-white text-bmg-navy bg-white hover:bg-bmg-navy hover:text-white hover:border-bmg-navy font-montserrat font-semibold px-8 py-3 text-lg transition-all duration-300"
-              >
+              <Button asChild variant="outline" size="lg" className="border-2 border-white text-bmg-navy bg-white hover:bg-bmg-navy hover:text-white hover:border-bmg-navy font-montserrat font-semibold px-8 py-3 text-lg transition-all duration-300">
                 <Link to="/about">Learn More</Link>
               </Button>
             </div>
@@ -82,8 +68,6 @@ const Hero = () => {
       
       {/* Background Pattern */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
