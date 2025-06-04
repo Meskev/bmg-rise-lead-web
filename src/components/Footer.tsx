@@ -46,7 +46,7 @@ const Footer = () => {
               <p>Tanzania Headquarters
 Morocco Square Mwaikibaki-Road</p>
               <p>info@bmggroup.co.tz</p>
-              <p>+255 123 456 789</p>
+              <p>+255 740 076 076</p>
             </div>
           </div>
         </div>
