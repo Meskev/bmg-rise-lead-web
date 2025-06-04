@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -34,7 +35,7 @@ const Hero = () => {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-bmg-navy bg-white hover:bg-bmg-navy hover:text-white font-montserrat font-semibold px-8 py-3 text-lg transition-all duration-300"
+                className="border-2 border-white text-bmg-navy bg-white hover:bg-bmg-navy hover:text-white hover:border-bmg-navy font-montserrat font-semibold px-8 py-3 text-lg transition-all duration-300"
               >
                 <Link to="/about">Learn More</Link>
               </Button>
