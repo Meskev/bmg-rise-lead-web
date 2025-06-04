@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="lg:col-span-2">
-            <img src="/lovable-uploads/b2c87bec-dbf0-4190-8863-85d4be64cc03.png" alt="BMG Group International Limited" className="h-12 w-auto mb-4 bg-white p-2 rounded" />
+            <img src="/lovable-uploads/b2c87bec-dbf0-4190-8863-85d4be64cc03.png" alt="BMG Group International Limited" className="h-12 w-auto mb-4 bg-white p-2 rounded object-cover" />
             <p className="font-open-sans text-gray-300 mb-4 max-w-md">
               BMG Group is a dynamic consultancy and investment firm providing strategic oversight across multiple sectors in Africa.
             </p>
@@ -52,9 +52,7 @@ Morocco Square Mwaikibaki-Road</p>
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="font-open-sans text-gray-400">
-            © 2024 BMG Group International Limited. All rights reserved.
-          </p>
+          <p className="font-open-sans text-gray-400">© 2025 BMG Group International Limited. All rights reserved.</p>
         </div>
       </div>
     </footer>;
