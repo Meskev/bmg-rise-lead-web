@@ -1,56 +1,46 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-
 const Ventures = () => {
-  const ventures = [
-    {
-      title: 'East Africa Tourism Initiative',
-      sector: 'Tourism',
-      description: 'A comprehensive tourism development project focusing on sustainable eco-tourism across East Africa, promoting local communities and conservation.',
-      status: 'Active',
-      impact: 'Supporting 15+ local communities'
-    },
-    {
-      title: 'Tanzania Logistics Network',
-      sector: 'Logistics',
-      description: 'Strategic logistics infrastructure development connecting major ports to inland distribution centers, enhancing regional trade efficiency.',
-      status: 'Expanding',
-      impact: '40% reduction in transport costs'
-    },
-    {
-      title: 'Dar es Salaam Commercial Complex',
-      sector: 'Real Estate',
-      description: 'Modern commercial and residential development project in Tanzania\'s economic capital, featuring sustainable design and smart building technologies.',
-      status: 'Development',
-      impact: '500+ units planned'
-    },
-    {
-      title: 'Mobile Finance Solutions',
-      sector: 'Fintech',
-      description: 'Digital financial services platform enabling financial inclusion for underserved communities across rural Tanzania and neighboring regions.',
-      status: 'Pilot Phase',
-      impact: '10,000+ users onboarded'
-    },
-    {
-      title: 'Construction Materials Supply Chain',
-      sector: 'Construction',
-      description: 'Integrated supply chain solution for construction materials, ensuring quality and timely delivery for major infrastructure projects.',
-      status: 'Operational',
-      impact: 'Serving 25+ major projects'
-    },
-    {
-      title: 'Regional Investment Fund',
-      sector: 'Investment',
-      description: 'Specialized investment fund focusing on high-growth potential SMEs across East Africa, providing capital and strategic guidance.',
-      status: 'Active',
-      impact: '$5M+ invested in 12 companies'
-    }
-  ];
-
+  const ventures = [{
+    title: 'East Africa Tourism Initiative',
+    sector: 'Tourism',
+    description: 'A comprehensive tourism development project focusing on sustainable eco-tourism across East Africa, promoting local communities and conservation.',
+    status: 'Active',
+    impact: 'Supporting 15+ local communities'
+  }, {
+    title: 'Tanzania Logistics Network',
+    sector: 'Logistics',
+    description: 'Strategic logistics infrastructure development connecting major ports to inland distribution centers, enhancing regional trade efficiency.',
+    status: 'Expanding',
+    impact: '40% reduction in transport costs'
+  }, {
+    title: 'Dar es Salaam Commercial Complex',
+    sector: 'Real Estate',
+    description: 'Modern commercial and residential development project in Tanzania\'s economic capital, featuring sustainable design and smart building technologies.',
+    status: 'Development',
+    impact: '500+ units planned'
+  }, {
+    title: 'Mobile Finance Solutions',
+    sector: 'Fintech',
+    description: 'Digital financial services platform enabling financial inclusion for underserved communities across rural Tanzania and neighboring regions.',
+    status: 'Pilot Phase',
+    impact: '10,000+ users onboarded'
+  }, {
+    title: 'Construction Materials Supply Chain',
+    sector: 'Construction',
+    description: 'Integrated supply chain solution for construction materials, ensuring quality and timely delivery for major infrastructure projects.',
+    status: 'Operational',
+    impact: 'Serving 25+ major projects'
+  }, {
+    title: 'Regional Investment Fund',
+    sector: 'Investment',
+    description: 'Specialized investment fund focusing on high-growth potential SMEs across East Africa, providing capital and strategic guidance.',
+    status: 'Active',
+    impact: '$5M+ invested in 12 companies'
+  }];
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'Active':
@@ -67,9 +57,7 @@ const Ventures = () => {
         return 'bg-gray-100 text-gray-800';
     }
   };
-
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Hero Section */}
@@ -98,8 +86,7 @@ const Ventures = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {ventures.map((venture, index) => (
-              <Card key={index} className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            {ventures.map((venture, index) => <Card key={index} className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardContent className="p-8">
                   <div className="flex justify-between items-start mb-4">
                     <div>
@@ -128,8 +115,7 @@ const Ventures = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -145,15 +131,15 @@ const Ventures = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-montserrat font-bold text-bmg-crimson mb-2">25+</div>
+              <div className="text-4xl font-montserrat font-bold text-bmg-crimson mb-2">10+</div>
               <p className="font-open-sans text-gray-600">Active Projects</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-montserrat font-bold text-bmg-crimson mb-2">6</div>
+              <div className="text-4xl font-montserrat font-bold text-bmg-crimson mb-2">7</div>
               <p className="font-open-sans text-gray-600">Key Sectors</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-montserrat font-bold text-bmg-crimson mb-2">$50M+</div>
+              <div className="text-4xl font-montserrat font-bold text-bmg-crimson mb-2">100M+ TSh</div>
               <p className="font-open-sans text-gray-600">Total Investment</p>
             </div>
             <div className="text-center">
@@ -173,19 +159,13 @@ const Ventures = () => {
           <p className="font-open-sans text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Join us in driving transformation across Africa. Let's explore how we can create value together.
           </p>
-          <Button 
-            asChild
-            size="lg"
-            className="bg-bmg-orange hover:bg-bmg-crimson text-white font-montserrat font-semibold px-8 py-3"
-          >
+          <Button asChild size="lg" className="bg-bmg-orange hover:bg-bmg-crimson text-white font-montserrat font-semibold px-8 py-3">
             <Link to="/contact">Explore Partnership</Link>
           </Button>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Ventures;
