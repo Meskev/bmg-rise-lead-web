@@ -1,9 +1,11 @@
+
 import Hero from '@/components/Hero';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
+
 const Index = () => {
   const services = [{
     title: 'Business Consultancy',
@@ -14,8 +16,8 @@ const Index = () => {
     description: 'Professional portfolio management and investment advisory services.',
     image: '/lovable-uploads/f86af332-dedf-4d9e-9391-45087b9e46a5.png'
   }, {
-    title: 'Tours & Safaris',
-    description: 'We curate unforgettable travel experiences through expertly guided tours and bespoke safari adventures across Tanzania\'s most iconic destination.',
+    title: 'Tourism & Hospitality',
+    description: 'We support businesses in establishing and scaling their tour operations across Tanzania and beyond. In hospitality, we professionally manage serviced apartments and rental properties, providing seamless guest experiences and operational efficiency.',
     image: '/lovable-uploads/aaee8104-1371-4431-a1a3-a629f7ebeda7.png'
   }, {
     title: 'Logistics Solutions',
@@ -27,9 +29,38 @@ const Index = () => {
     image: '/lovable-uploads/e20a98f8-a7a6-49d0-b56b-54da1db32907.png'
   }, {
     title: 'Financial Services',
-    description: 'Mobile finance and digital payment solutions for emerging markets.',
+    description: 'We specialize in managing businesses in the mobile money sector, mobile banking agency networks, and Bureau de Change operations. We are also expanding our expertise to offer consultancy services for microfinance institutions and startups.',
     image: '/lovable-uploads/c2c642e7-c0da-43bf-90fe-3076f7803380.png'
   }];
+
+  const affiliateLogos = [
+    { name: 'BMG Tours & Safaris', logo: '/lovable-uploads/b2c87bec-dbf0-4190-8863-85d4be64cc03.png' },
+    { name: 'BMG Investment', logo: '/lovable-uploads/f86af332-dedf-4d9e-9391-45087b9e46a5.png' },
+    { name: 'BMG Real Estate', logo: '/lovable-uploads/e20a98f8-a7a6-49d0-b56b-54da1db32907.png' },
+    { name: 'BMG Logistics', logo: '/lovable-uploads/dd4ec671-5bf1-4990-8bda-f928ad5e7629.png' },
+  ];
+
+  const testimonials = [
+    {
+      quote: "BMG Group's strategic guidance transformed our operations and opened new market opportunities across East Africa.",
+      author: "Sarah Johnson",
+      position: "CEO, TechVentures Africa",
+      company: "Leading Technology Company"
+    },
+    {
+      quote: "Their expertise in investment management and market analysis has been instrumental in our expansion strategy.",
+      author: "David Mwangi",
+      position: "Managing Director",
+      company: "Regional Investment Firm"
+    },
+    {
+      quote: "The professionalism and deep understanding of African markets sets BMG Group apart from other consultancy firms.",
+      author: "Maria Santos",
+      position: "Operations Director",
+      company: "International Development Agency"
+    }
+  ];
+
   return <div className="min-h-screen bg-white">
       <Navigation />
       <Hero />
@@ -48,11 +79,8 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => <Card key={index} className="group relative bg-white/70 backdrop-blur-lg border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 rounded-2xl overflow-hidden">
-                {/* Glass effect overlay - covers entire card */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-                
-                {/* Gradient border effect - covers entire card */}
-                <div className="absolute inset-0 bg-gradient-to-r from-bmg-orange/30 via-bmg-crimson/30 to-bmg-navy/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-bmg-orange/30 via-bmg-crimson/30 to-bmg-navy/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <CardContent className="relative p-0 text-center z-10">
                   <div className="h-48 w-full overflow-hidden bg-gradient-to-br from-bmg-light-gray/50 to-white/80 backdrop-blur-sm">
@@ -67,7 +95,6 @@ const Index = () => {
                     </p>
                   </div>
                   
-                  {/* Shine effect */}
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
                 </CardContent>
               </Card>)}
@@ -77,6 +104,72 @@ const Index = () => {
             <Button asChild size="lg" className="bg-bmg-crimson hover:bg-bmg-orange text-white font-montserrat font-semibold px-8 py-3">
               <Link to="/services">View All Services</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted By Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-bmg-navy mb-4">
+              Trusted by These Exceptional Businesses
+            </h2>
+            <p className="font-open-sans text-xl text-gray-600 max-w-3xl mx-auto">
+              Our affiliate businesses under BMG Group showcase our diverse expertise and commitment to excellence across multiple sectors.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+            {affiliateLogos.map((affiliate, index) => (
+              <div key={index} className="flex items-center justify-center p-6 bg-bmg-light-gray rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                <img 
+                  src={affiliate.logo} 
+                  alt={affiliate.name}
+                  className="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-gradient-to-br from-bmg-light-gray via-white to-bmg-light-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-bmg-navy mb-4">
+              Here's How Industry Leaders Talk About Us
+            </h2>
+            <p className="font-open-sans text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover what key partners and business leaders say about their experience working with BMG Group.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-xl">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <div className="text-4xl text-bmg-orange mb-4">"</div>
+                    <p className="font-open-sans text-gray-700 leading-relaxed italic">
+                      {testimonial.quote}
+                    </p>
+                  </div>
+                  <div className="border-t border-gray-100 pt-6">
+                    <div className="font-montserrat font-semibold text-bmg-navy">
+                      {testimonial.author}
+                    </div>
+                    <div className="font-open-sans text-sm text-gray-600">
+                      {testimonial.position}
+                    </div>
+                    <div className="font-open-sans text-sm text-bmg-crimson">
+                      {testimonial.company}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -102,4 +195,5 @@ const Index = () => {
       <Footer />
     </div>;
 };
+
 export default Index;
