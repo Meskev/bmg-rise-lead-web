@@ -18,8 +18,8 @@ const Index = () => {
       image: '/lovable-uploads/f86af332-dedf-4d9e-9391-45087b9e46a5.png'
     },
     {
-      title: 'Tourism Development',
-      description: 'Comprehensive tourism sector development and management solutions.',
+      title: 'Tours & Safaris',
+      description: 'We curate unforgettable travel experiences through expertly guided tours and bespoke safari adventures across Tanzania\'s most iconic destination.',
       image: '/lovable-uploads/aaee8104-1371-4431-a1a3-a629f7ebeda7.png'
     },
     {
