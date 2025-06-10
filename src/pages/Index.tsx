@@ -1,4 +1,3 @@
-
 import Hero from '@/components/Hero';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -54,11 +53,11 @@ const Index = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-bmg-orange/20 via-bmg-crimson/20 to-bmg-navy/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
                 
                 <CardContent className="relative p-8 text-center z-10">
-                  <div className="mb-6 h-48 w-full rounded-xl overflow-hidden bg-gradient-to-br from-bmg-light-gray/50 to-white/80 backdrop-blur-sm p-4 shadow-inner">
+                  <div className="mb-6 h-48 w-full rounded-xl overflow-hidden bg-gradient-to-br from-bmg-light-gray/50 to-white/80 backdrop-blur-sm shadow-inner">
                     <img 
                       src={service.image} 
                       alt={service.title} 
-                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                     />
                   </div>
                   <h3 className="font-montserrat font-semibold text-xl text-bmg-navy mb-3 group-hover:text-bmg-crimson transition-colors duration-300">
