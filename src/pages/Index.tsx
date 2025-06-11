@@ -124,31 +124,31 @@ const Index = () => {
             <div className="flex animate-[scroll_30s_linear_infinite] space-x-12">
               {/* First set of logos */}
               {affiliateLogos.map((affiliate, index) => (
-                <div key={index} className="flex-shrink-0 w-48 h-32 flex items-center justify-center p-6 bg-bmg-light-gray rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                <div key={index} className="flex-shrink-0 w-48 h-32 flex items-center justify-center p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-300">
                   <img 
                     src={affiliate.logo} 
                     alt={affiliate.name}
-                    className="max-h-20 max-w-40 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300 object-contain"
+                    className="max-h-20 max-w-40 w-auto transition-transform duration-300 hover:scale-105 object-contain filter brightness-100 contrast-110"
                   />
                 </div>
               ))}
               {/* Duplicate set for seamless loop */}
               {affiliateLogos.map((affiliate, index) => (
-                <div key={`duplicate-${index}`} className="flex-shrink-0 w-48 h-32 flex items-center justify-center p-6 bg-bmg-light-gray rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                <div key={`duplicate-${index}`} className="flex-shrink-0 w-48 h-32 flex items-center justify-center p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-300">
                   <img 
                     src={affiliate.logo} 
                     alt={affiliate.name}
-                    className="max-h-20 max-w-40 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300 object-contain"
+                    className="max-h-20 max-w-40 w-auto transition-transform duration-300 hover:scale-105 object-contain filter brightness-100 contrast-110"
                   />
                 </div>
               ))}
               {/* Third set for smooth continuation */}
               {affiliateLogos.map((affiliate, index) => (
-                <div key={`triple-${index}`} className="flex-shrink-0 w-48 h-32 flex items-center justify-center p-6 bg-bmg-light-gray rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                <div key={`triple-${index}`} className="flex-shrink-0 w-48 h-32 flex items-center justify-center p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-300">
                   <img 
                     src={affiliate.logo} 
                     alt={affiliate.name}
-                    className="max-h-20 max-w-40 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300 object-contain"
+                    className="max-h-20 max-w-40 w-auto transition-transform duration-300 hover:scale-105 object-contain filter brightness-100 contrast-110"
                   />
                 </div>
               ))}
