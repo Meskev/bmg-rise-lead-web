@@ -16,8 +16,8 @@ const Index = () => {
     description: 'Professional portfolio management and investment advisory services.',
     image: '/lovable-uploads/f86af332-dedf-4d9e-9391-45087b9e46a5.png'
   }, {
-    title: 'Tourism & Hospitality',
-    description: 'We support businesses in establishing and scaling their tour operations across Tanzania and beyond. In hospitality, we professionally manage serviced apartments and rental properties, providing seamless guest experiences and operational efficiency.',
+    title: 'Tours & Safaris',
+    description: 'We curate unforgettable travel experiences through expertly guided tours and bespoke safari adventures across Tanzania\'s most iconic destination.',
     image: '/lovable-uploads/aaee8104-1371-4431-a1a3-a629f7ebeda7.png'
   }, {
     title: 'Logistics Solutions',
@@ -34,10 +34,10 @@ const Index = () => {
   }];
 
   const affiliateLogos = [
-    { name: 'BMG Tours & Safaris', logo: '/lovable-uploads/b2c87bec-dbf0-4190-8863-85d4be64cc03.png' },
-    { name: 'BMG Investment', logo: '/lovable-uploads/f86af332-dedf-4d9e-9391-45087b9e46a5.png' },
-    { name: 'BMG Real Estate', logo: '/lovable-uploads/e20a98f8-a7a6-49d0-b56b-54da1db32907.png' },
-    { name: 'BMG Logistics', logo: '/lovable-uploads/dd4ec671-5bf1-4990-8bda-f928ad5e7629.png' },
+    { name: '55th Avenue Investment Limited', logo: '/lovable-uploads/88d47f2f-ffcf-4edc-a35a-1e977e7bfbf8.png' },
+    { name: 'Aushtaek Tours', logo: '/lovable-uploads/709f8b5b-09e3-4890-86e0-9378bdb5fe00.png' },
+    { name: 'Tangaroa Freight Logistics Limited', logo: '/lovable-uploads/b2249a8d-91fc-4660-b101-4f4a75a149e8.png' },
+    { name: 'HW Logo', logo: '/lovable-uploads/c9a6b37c-c0b3-4ed7-a596-ddb6a1a8d31d.png' },
   ];
 
   const testimonials = [
@@ -109,7 +109,7 @@ const Index = () => {
       </section>
 
       {/* Trusted By Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-bmg-navy mb-4">
@@ -120,16 +120,39 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            {affiliateLogos.map((affiliate, index) => (
-              <div key={index} className="flex items-center justify-center p-6 bg-bmg-light-gray rounded-lg hover:bg-gray-100 transition-colors duration-300">
-                <img 
-                  src={affiliate.logo} 
-                  alt={affiliate.name}
-                  className="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
-                />
-              </div>
-            ))}
+          <div className="relative">
+            <div className="flex animate-[scroll_30s_linear_infinite] space-x-12">
+              {/* First set of logos */}
+              {affiliateLogos.map((affiliate, index) => (
+                <div key={index} className="flex-shrink-0 w-48 h-32 flex items-center justify-center p-6 bg-bmg-light-gray rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                  <img 
+                    src={affiliate.logo} 
+                    alt={affiliate.name}
+                    className="max-h-20 max-w-40 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300 object-contain"
+                  />
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {affiliateLogos.map((affiliate, index) => (
+                <div key={`duplicate-${index}`} className="flex-shrink-0 w-48 h-32 flex items-center justify-center p-6 bg-bmg-light-gray rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                  <img 
+                    src={affiliate.logo} 
+                    alt={affiliate.name}
+                    className="max-h-20 max-w-40 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300 object-contain"
+                  />
+                </div>
+              ))}
+              {/* Third set for smooth continuation */}
+              {affiliateLogos.map((affiliate, index) => (
+                <div key={`triple-${index}`} className="flex-shrink-0 w-48 h-32 flex items-center justify-center p-6 bg-bmg-light-gray rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                  <img 
+                    src={affiliate.logo} 
+                    alt={affiliate.name}
+                    className="max-h-20 max-w-40 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300 object-contain"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

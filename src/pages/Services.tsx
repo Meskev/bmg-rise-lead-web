@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+
 const Services = () => {
   const services = [{
     title: 'Business Consultancy & Strategy',
@@ -15,9 +16,9 @@ const Services = () => {
     features: ['Portfolio Management', 'Risk Assessment', 'Investment Advisory', 'Due Diligence'],
     icon: '📈'
   }, {
-    title: 'Tourism Development',
-    description: 'Comprehensive tourism sector development and management solutions to unlock tourism potential.',
-    features: ['Tourism Strategy', 'Destination Development', 'Hospitality Management', 'Sustainable Tourism'],
+    title: 'Tourism & Hospitality',
+    description: 'We support businesses in establishing and scaling their tour operations across Tanzania and beyond. In hospitality, we professionally manage serviced apartments and rental properties, providing seamless guest experiences and operational efficiency.',
+    features: ['Tourism Strategy', 'Tour Operations', 'Hospitality Management', 'Property Management'],
     icon: '🌍'
   }, {
     title: 'Logistics Solutions',
@@ -31,8 +32,8 @@ const Services = () => {
     icon: '🏢'
   }, {
     title: 'Financial Services',
-    description: 'Mobile finance and digital payment solutions designed for emerging markets and financial inclusion.',
-    features: ['Mobile Finance', 'Digital Payments', 'Financial Inclusion', 'Fintech Solutions'],
+    description: 'We specialize in managing businesses in the mobile money sector, mobile banking agency networks, and Bureau de Change operations. We are also expanding our expertise to offer consultancy services for microfinance institutions and startups.',
+    features: ['Mobile Finance', 'Banking Networks', 'Bureau de Change', 'Microfinance Consultancy'],
     icon: '💳'
   }];
   return <div className="min-h-screen bg-white">
@@ -100,4 +101,5 @@ const Services = () => {
       <Footer />
     </div>;
 };
+
 export default Services;
