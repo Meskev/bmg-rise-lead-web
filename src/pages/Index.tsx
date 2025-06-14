@@ -129,7 +129,9 @@ const Index = () => {
                   <img 
                     src={affiliate.logo} 
                     alt={affiliate.name}
-                    className="max-h-20 max-w-40 w-auto transition-transform duration-300 hover:scale-105 object-contain filter brightness-100 contrast-110"
+                    className={`w-auto transition-transform duration-300 hover:scale-105 object-contain filter brightness-100 contrast-110 ${
+                      affiliate.name === 'Whistling Woods' ? 'max-h-24 max-w-44' : 'max-h-20 max-w-40'
+                    }`}
                   />
                 </div>
               ))}
@@ -139,7 +141,9 @@ const Index = () => {
                   <img 
                     src={affiliate.logo} 
                     alt={affiliate.name}
-                    className="max-h-20 max-w-40 w-auto transition-transform duration-300 hover:scale-105 object-contain filter brightness-100 contrast-110"
+                    className={`w-auto transition-transform duration-300 hover:scale-105 object-contain filter brightness-100 contrast-110 ${
+                      affiliate.name === 'Whistling Woods' ? 'max-h-24 max-w-44' : 'max-h-20 max-w-40'
+                    }`}
                   />
                 </div>
               ))}
@@ -149,7 +153,9 @@ const Index = () => {
                   <img 
                     src={affiliate.logo} 
                     alt={affiliate.name}
-                    className="max-h-20 max-w-40 w-auto transition-transform duration-300 hover:scale-105 object-contain filter brightness-100 contrast-110"
+                    className={`w-auto transition-transform duration-300 hover:scale-105 object-contain filter brightness-100 contrast-110 ${
+                      affiliate.name === 'Whistling Woods' ? 'max-h-24 max-w-44' : 'max-h-20 max-w-40'
+                    }`}
                   />
                 </div>
               ))}
