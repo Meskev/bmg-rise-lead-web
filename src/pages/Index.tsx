@@ -1,4 +1,3 @@
-
 import Hero from '@/components/Hero';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -108,7 +107,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Trusted By Section */}
+      {/* Trusted By Section with faster animation */}
       <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -121,7 +120,7 @@ const Index = () => {
           </div>
           
           <div className="relative">
-            <div className="flex animate-[scroll_30s_linear_infinite] space-x-12">
+            <div className="flex animate-[scroll_15s_linear_infinite] space-x-12">
               {/* First set of logos */}
               {affiliateLogos.map((affiliate, index) => (
                 <div key={index} className="flex-shrink-0 w-48 h-32 flex items-center justify-center p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-300">
