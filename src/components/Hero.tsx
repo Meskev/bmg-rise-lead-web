@@ -67,7 +67,7 @@ const Hero = () => {
       </div>
       
       {/* Background Pattern */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+      
     </section>;
 };
 export default Hero;
