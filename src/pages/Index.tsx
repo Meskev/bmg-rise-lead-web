@@ -33,10 +33,12 @@ const Index = () => {
   }];
 
   const affiliateLogos = [
-    { name: '55th Avenue Investment Limited', logo: '/lovable-uploads/88d47f2f-ffcf-4edc-a35a-1e977e7bfbf8.png' },
-    { name: 'Aushtaek Tours', logo: '/lovable-uploads/709f8b5b-09e3-4890-86e0-9378bdb5fe00.png' },
-    { name: 'Tangaroa Freight Logistics Limited', logo: '/lovable-uploads/b2249a8d-91fc-4660-b101-4f4a75a149e8.png' },
-    { name: 'HW Logo', logo: '/lovable-uploads/c9a6b37c-c0b3-4ed7-a596-ddb6a1a8d31d.png' },
+    { name: '55th Avenue Investment Limited', logo: '/lovable-uploads/92ca3342-f120-49ba-963a-69a88dfad187.png' },
+    { name: 'BMG Brothers Investment Ltd', logo: '/lovable-uploads/04541b29-48c0-40a5-801c-f8ce29e8fd5f.png' },
+    { name: 'Aushtaek Tours', logo: '/lovable-uploads/667f3255-dce6-4182-b863-292a6ef2d1fe.png' },
+    { name: 'Tangaroa Freight Logistics Limited', logo: '/lovable-uploads/a0e3d3a8-efc3-4ff4-a5a4-19700dafc474.png' },
+    { name: 'Hinno Logistics Company Limited', logo: '/lovable-uploads/dcb5644e-3a57-4591-9118-1c76ba5b481d.png' },
+    { name: 'Whistling Woods', logo: '/lovable-uploads/4f1bb185-9145-44ba-b1f3-5ef82e308afc.png' },
   ];
 
   const testimonials = [
